@@ -24,7 +24,9 @@
 Add the following to your `Podfile` and run `pod update`:
 
 ```
+pod 'RKDropdownAlert'
 pod 'RNAlerter', :path => '../node_modules/react-native-alerter'
+```
 
 #### Android
 
@@ -44,9 +46,8 @@ pod 'RNAlerter', :path => '../node_modules/react-native-alerter'
 
 ## Usage
 ```javascript
-import RNAlerter from 'react-native-alerter';
+import Alerter from 'react-native-alerter';
 
-// TODO: What to do with the module?
-RNAlerter;
+Alerter.show({ title: 'Hello word!', 'Message...', backgroundColor: '#424543', duration: 4000 });
 ```
   

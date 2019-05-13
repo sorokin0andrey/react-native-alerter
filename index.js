@@ -4,7 +4,7 @@ import { NativeModules, Platform } from 'react-native';
 const { RNAlerter } = NativeModules;
 
 export default class Alerter {
-  static show({ title = '', message = '', backgroundColor = '', duration = 4000 }) {
+  static show({ title = '', message = '', backgroundColor = '#424543', duration = 4000 }) {
     RNAlerter.show({
       backgroundColor,
       duration,
