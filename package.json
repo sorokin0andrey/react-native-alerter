@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-alerter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native truly native dropdown alert",
   "main": "index.js",
   "scripts": {

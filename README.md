@@ -19,6 +19,13 @@
 3. In XCode, in the project navigator, select your project. Add `libRNAlerter.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
+#### Option: With [CocoaPods](https://cocoapods.org/)
+
+Add the following to your `Podfile` and run `pod update`:
+
+```
+pod 'RNAlerter', :path => '../node_modules/react-native-alerter'
+
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
