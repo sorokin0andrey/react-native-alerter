@@ -3,28 +3,16 @@
 
 ## Getting started
 
-`$ npm install react-native-alerter --save`
-
-### Mostly automatic installation
-
-`$ react-native link react-native-alerter`
+`$ yarn add react-native-alerter`
 
 ### Manual installation
 
 
-#### iOS
-
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-alerter` and add `RNAlerter.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNAlerter.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
-
-#### Option: With [CocoaPods](https://cocoapods.org/)
+#### iOS With [CocoaPods](https://cocoapods.org/)
 
 Add the following to your `Podfile` and run `pod update`:
 
 ```
-pod 'RKDropdownAlert'
 pod 'RNAlerter', :path => '../node_modules/react-native-alerter'
 ```
 
