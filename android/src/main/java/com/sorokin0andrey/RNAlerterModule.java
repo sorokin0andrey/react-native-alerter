@@ -1,7 +1,6 @@
 
 package com.sorokin0andrey;
 
-import android.graphics.Color;
 import com.tapadoo.alerter.Alerter;
 
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -27,14 +26,8 @@ public class RNAlerterModule extends ReactContextBaseJavaModule {
   public void show(final ReadableMap props) {
     String title = props.getString("title");
     String message = props.getString("message");
-    String backgroundColorValue = props.getString("backgroundColor");
+    int backgroundColor = props.getInt("backgroundColor");
     int duration = props.getInt("duration");
-
-    int backgroundColor = 0;
-
-    if (backgroundColorValue.length() > 0) {
-      backgroundColor = Color.parseColor(backgroundColorValue);
-    }
 
     Alerter alerter = Alerter.create(getCurrentActivity());
     if (title.length() > 0) {
